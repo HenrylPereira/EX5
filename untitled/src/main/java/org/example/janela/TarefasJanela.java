@@ -9,6 +9,11 @@ public class TarefasJanela extends JFrame {
 
     JLabel label = new JLabel();
     JButton tarefaBtt = new JButton();
+
+    JCheckBox check = new JCheckBox("ata");
+    JCheckBox[] ata;
+    JList list = new JList();
+
     public TarefasJanela(){
         setTitle("Tarefas");
         setSize(400,400);
@@ -20,6 +25,7 @@ public class TarefasJanela extends JFrame {
     public void configurarJanela(){
         JPanel panel = new JPanel();
         label.setText("Caixa de entrada");
+        label.setPreferredSize( new Dimension(250, 80));
 
         tarefaBtt.setText("Nova Tarefa");
 
